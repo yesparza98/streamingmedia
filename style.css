@@ -1,0 +1,411 @@
+html {
+    background-color:#020659;
+}
+
+body {
+    width: 375px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    height: 1400px;
+}
+
+header {
+    position: relative; 
+    display: block;  
+    background-color: #020873; 
+    color: #ffffff;
+}
+article {
+  position: relative;
+  bottom: -100px;
+  background: linear-gradient(90deg, #2104d9,#020659,  #000000);
+  height: 120px;
+  padding: 20px; 
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color:#590242;
+    font-size: 20px;
+}
+h2 {
+    padding-left: 30px;
+}
+
+#trend_song h3 {
+    margin-left: 25px;
+}
+
+nav {
+    width: 375px;
+    margin-top: -20px;
+    background-color: #030A8C;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+nav ul {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2104D9;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+[href="home"] {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 30px;
+    position: static;
+    top: 0px;
+    left: 10px;
+    padding: 40px 20px;
+}
+
+[href="home"]:hover {
+    height: 16px;
+}
+
+[href="tsongs"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 25px;
+    position: static;
+    top: 0px;
+    left: 210px;
+    padding: 40px 20px;
+}
+
+[href="tsongs"]:hover {
+    height: 16px;
+}
+ [href="yplay"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 25px;
+    position: static;
+    top: 0px;
+    left: 350px;
+    padding: 40px 20px;
+    
+}
+
+[href="yplay"]:hover {
+    height: 16px;
+}  
+
+[href="cplay"] {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 25px;
+    position: static;
+    top: 0px;
+    right: 50px;
+    padding: 40px 20px;
+}
+
+[href="cplay"]:hover {
+    height: 16px;
+}
+
+[href="user"] {
+    position: static;
+    top: 0px;
+    right: 50px;
+    padding: 50px 20px;
+    
+}
+
+[href="user"]:hover {
+    height: 1px;
+}
+
+a:hover, input:hover{
+    background-color: #590242;
+}
+
+.scroll_trend {
+    display: flex;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll_trend section {
+    margin: 10px;
+    position: relative;
+    color: #590242;
+}
+
+dl {
+    display: flex;
+}
+
+dt, dd {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+    opacity: .5;
+}
+
+div h3{
+  position: absolute; 
+  bottom: 15px; 
+  padding-left: 16px;
+  opacity:.7;
+  background-color: #FFFFFF;
+  left: -25px;
+  width: 300px; 
+}
+
+div p{ 
+  position: absolute; 
+  bottom: -12px; 
+  background-color: #FFFFFF; 
+  left: -15px;
+  width: 300px;
+  height: 31px;
+  opacity: .7;
+  padding-left: 30px;
+}
+
+#trend_song{
+  position: relative; 
+  bottom: -90px;
+  left: -px;
+}
+
+#trend_song ::-webkit-scrollbar {
+    width: 15px;
+}
+#trend_song ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trend_song ::-webkit-scrollbar-thumb {
+    background-color: #590242;
+    border-radius: 5px;
+}
+#trend_song ::-webkit-scrollbar-thumb:hover {
+    background-color: #020659;
+}
+
+.more_trend {
+    position: relative;
+    bottom: -100px; 
+    display: block;
+    background-color: #590242;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.more_trend:hover {
+    background-color: #020659;
+}
+
+/*your play*/
+
+#yplay{
+  position: relative; 
+  bottom: -110px; 
+}
+
+.scroll_yplay section {
+    margin: 10px;
+    position: relative;
+    color: #FFFFFF;
+}
+.scroll_yplay{
+  float: left; 
+  background-color: #2699FB;
+  height: 500px; 
+  width: 410px;  
+  overflow: auto;
+}
+.scroll_yplay div{
+  background-color: #0D8DFB;
+}
+#y_playbutton {
+    position: relative; 
+    display: block;
+    background-color: #590242;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    bottom: -640px;
+    left: -150px; 
+    font-size: 14px;
+}
+
+#y_playbutton:hover{
+    background-color: #020659;
+}
+
+.scroll_yplay dd{
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  box-align: center;
+  font-style: normal;
+  width: 210px; 
+}
+
+.scroll_yplay dt{
+  font-weight: bold; 
+  font-style: normal; 
+  color: #FFFFFF;
+  position: absolute;
+  top: 5px;
+  left: 195px;
+  box-align: center;
+}
+
+#yplay ::-webkit-scrollbar {
+  width: 20px;
+}
+#yplay ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px #020659;
+}
+#yplay ::-webkit-scrollbar-thumb {
+   background-color: #020659;
+   border-radius: 5px;
+}
+#yplay ::-webkit-scrollbar-thumb:hover {
+   background-color: #590242;
+}
+/*#c_play*/
+
+#cplay{
+  position: relative; 
+  bottom: -14px;
+}
+
+.scroll_cplay section {
+    margin: 10px;
+    position: relative;
+    color: #FFFFFF;
+}
+.scroll_cplay{
+  float: right;
+  background-color: #030A8C;
+  height: 500px; 
+  width: 420px;  
+  overflow: auto;
+}
+.scroll_cplay div{
+  background-color: #020873;
+}
+
+.scroll_cplay button:hover{
+    background-color: #020659;
+}
+
+#c_playbutton {
+    position: relative; 
+    display: block;
+    background-color: #590242;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    bottom: -140px;
+    right: -650px; 
+    font-size: 14px;
+}
+
+.scroll_cplay dd{
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  box-align: center;
+  font-style: normal;
+  width: 210px;
+}
+
+.scroll_cplay dt{
+  font-weight: bold; 
+  font-style: normal; 
+  color: #FFFFFF;
+  position: absolute;
+  top: 5px;
+  left: 195px;
+  box-align: center;
+}
+
+#c_playbutton:hover{
+    background-color: #020659;
+}
+
+#cplay ::-webkit-scrollbar {
+  width: 20px;
+}
+#cplay ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px #020659;
+}
+#cplay ::-webkit-scrollbar-thumb {
+   background-color: #020659;
+   border-radius: 5px;
+}
+#cplay ::-webkit-scrollbar-thumb:hover {
+   background-color: #590242;
+}
+
+footer {
+    position: relative;
+    bottom: -140px;
+    text-align: center;
+    color: #590242;
+    padding: 70px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white; 
+    
+}
+
+@media screen and (min-width: 834px){
+    body {
+        width: 834px;
+    }
+}
